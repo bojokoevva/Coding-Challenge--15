@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f3eb;
+    text-align: center;
+}
+
+h1 {
+    color: #5a5a5a;
+    font-size: 28px;
+    text-align: center;
+}
+
+#riskDashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.riskCard {
+    border: 1px solid #d8bfd8;
+    border-radius: 12px;
+    padding: 15px;
+    width: 220px;
+    background-color: #e6cfd1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.riskCard p {
+    margin: 5px 0;
+    color: #5a5a5a;
+}
+
+#riskForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 320px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#riskForm label {
+    font-weight: bold;
+    color: #5a5a5a;
+}
+
+#riskForm input, #riskForm select {
+    padding: 8px;
+    border: 1px solid #d8bfd8;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#riskForm button {
+    padding: 10px;
+    background-color: #a3c4bc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#riskForm button:hover {
+    background-color: #779e9b;
+}
+
+.resolveButton {
+    padding: 7px 12px;
+    background-color: #f4aeba;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.resolveButton:hover {
+    background-color: #d98899;
+}
