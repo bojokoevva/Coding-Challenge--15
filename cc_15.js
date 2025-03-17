@@ -6,3 +6,14 @@ console.log("Risk Dashboard Loaded");
 function addRiskItem(riskName, riskLevel, department) {  //Function to add a new risk item to the dashboard
     const riskCard = document.createElement("div");  //Create a new div element for the risk card
     riskCard.className = "riskCard";  // Assign a class for styling the risk card
+
+// Task 4: Categorizing Risks by Level
+    updateRiskCardStyle(riskCard, riskLevel);  // Update the background color of the risk card based on its severity level
+    
+    // Populate the risk card with risk information
+    riskCard.innerHTML = `
+    <p><strong>Risk Name:</strong> ${riskName}</p>
+    <p><strong>Risk Level:</strong> <span class="riskLevelText">${riskLevel}</span></p>
+    <p><strong>Department:</strong> ${department}</p>
+    <button class="resolveButton">Resolve</button>
+    `;
