@@ -1,2 +1,2 @@
 # Coding Challenge: Risk Management Dashboard 
-Cding Challenge #15
+Coding Challenge #15
