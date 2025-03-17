@@ -83,7 +83,7 @@ function updateRiskCardStyle(riskCard, riskLevel) {  //Function to update the ba
 // Task 2: Handle the form submission
 document.getElementById("riskForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    
+
     // Get the input values from the form
     const riskName = document.getElementById("riskName").value;
     const riskLevel = document.getElementById("riskLevel").value;
@@ -95,4 +95,18 @@ document.getElementById("riskForm").addEventListener("submit", function (event) 
     // Reset the form after submission
     document.getElementById("riskForm").reset();
 });
+
+// Task 5: Add the event listener to increase risk levels
+document.getElementById("increaseRiskLevels").addEventListener("click", increaseRiskLevels);
+
+// Test cases for adding risks
+addRiskItem("Data Breach", "High", "IT");
+addRiskItem("Supply Chain Disruption", "Medium", "Operations");
+addRiskItem("Market Fluctuations", "High", "Finance");
+addRiskItem("Cybersecurity Threat", "High", "IT");
+addRiskItem("HR Compliance Issue", "Low", "Human Resources");
+
+// Test case for bulk risk level updates
+addRiskItem("Employee Retention", "Low", "HR");
+
 
