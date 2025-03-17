@@ -20,3 +20,15 @@ function addRiskItem(riskName, riskLevel, department) {  //Function to add a new
     // Task 3: Removing Risk Items
     const resolveButton = riskCard.querySelector(".resolveButton");  //Add event listener to the "Resolve" button to remove the risk card from the dashboard
     resolveButton.addEventListener("click", function (event) {
+        // Task 6: Handling Event Propagation
+        event.stopPropagation();  // Prevent the event from propagating to parent elements
+        riskDashboard.removeChild(riskCard);  // Remove the risk card from the dashboard
+    });
+
+    // Prevent clicks inside the card from triggering other dashboard actions
+    riskCard.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+
+    riskDashboard.appendChild(riskCard);  // Append the newly created risk card to the riskDashboard container
+}
