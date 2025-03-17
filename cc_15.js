@@ -63,3 +63,19 @@ function increaseRiskLevels() {
     });
 }
 
+// Task 4: Categorizing Risks by Level
+function updateRiskCardStyle(riskCard, riskLevel) {  //Function to update the background color of the risk card based on its severity level
+    switch (riskLevel.toLowerCase()) {
+        case "low":
+            riskCard.style.backgroundColor = "#a8e6cf"; 
+            break;
+        case "medium":
+            riskCard.style.backgroundColor = "#ffecd1"; 
+            break;
+        case "high":
+            riskCard.style.backgroundColor = "#ffb3b3"; 
+            break;
+        default:
+            riskCard.style.backgroundColor = "#ffffff"; 
+    }
+}
