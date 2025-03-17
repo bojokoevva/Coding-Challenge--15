@@ -79,3 +79,20 @@ function updateRiskCardStyle(riskCard, riskLevel) {  //Function to update the ba
             riskCard.style.backgroundColor = "#ffffff"; 
     }
 }
+
+// Task 2: Handle the form submission
+document.getElementById("riskForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    
+    // Get the input values from the form
+    const riskName = document.getElementById("riskName").value;
+    const riskLevel = document.getElementById("riskLevel").value;
+    const department = document.getElementById("department").value;
+
+    // Add new risk item
+    addRiskItem(riskName, riskLevel, department);
+
+    // Reset the form after submission
+    document.getElementById("riskForm").reset();
+});
+
