@@ -17,3 +17,6 @@ function addRiskItem(riskName, riskLevel, department) {  //Function to add a new
     <p><strong>Department:</strong> ${department}</p>
     <button class="resolveButton">Resolve</button>
     `;
+    // Task 3: Removing Risk Items
+    const resolveButton = riskCard.querySelector(".resolveButton");  //Add event listener to the "Resolve" button to remove the risk card from the dashboard
+    resolveButton.addEventListener("click", function (event) {
